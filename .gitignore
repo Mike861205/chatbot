@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build output
+dist/
+**/dist/
+build/
+
+# Environment variables (never commit secrets)
+.env
+**/.env
+.env.local
+.env.production
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# TypeScript
+*.tsbuildinfo
+
+# Deploy secrets (Python scripts with credentials stay local)
+deploy/check_server.py
+deploy/debug_server.py
+deploy/test_db.py
+deploy/read_logs.py
+deploy/fix_server.py
+deploy/verify.py
+deploy/2_upload.py
+deploy/3_run_setup.py
+deploy/4_setup_ubuntu.py
