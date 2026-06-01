@@ -14,6 +14,9 @@ build/
 .env.production
 .env.*.local
 
+# Deployment docs with credentials (keep local only)
+DEPLOYMENT.md
+
 # Logs
 logs/
 *.log
